@@ -16,31 +16,43 @@
 	<link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 
-<body class="text-center bg-white">
+<body class="container-fluid text-center bg-white">
 
-	<!-- Navbar Section -->
-				<div class="bg-danger text-light d-flex font-weight-bold fixed-top">
-					<div class="p-2 mr-auto">John Alfred Manalang</div>
-					<div class="d-flex">
-						<div class="p-2 mr-5"><a href="#" class="text-white">About Me</a></div>
-						<div class="p-2 mr-5"><a href="#experiences" class="text-white">Professional Experiences</a></div>
-						<div class="p-2 mr-5"><a href="#hobbies" class="text-white">Hobbies and Interests</a></div>	
-						<div class="p-2 mr-5"><a href="#contact" class="text-white">Contact</a></div>						
-					</div>
-				</div>
-	<!-- End of Navbar Section -->
+	<!-- Navbar section -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger font-weight-bold">
+	  <a class="navbar-brand" href="#">Alfred Manalang</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto"> <!--ml-auto - position links to the right hand side of the navbar-->
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#aboutme">About Me<span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#profexperience">Professional Experiences</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#hobbies">Interests and Hobbies</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
 
 	<!-- About Me Section -->
-		<div class="container-fluid p-4">
+		<div class="container-fluid p-4" id="aboutme">
 		<!-- Short Introduction  -->
-			<div class="d-md-flex justify-content-around p-2">
-				<div class="mt-4 p-1 d-flex-column">
+			<div class="d-md-flex p-2">
+				<div class="mt-4 p-3 d-flex-column">
 					<img src="images/me.jpg" width="750" class="img-fluid rounded-circle">
 				</div>
-				<div class="mt-3 ml-auto mr-auto p-4 mt-5">
+				<div class="mt-3 center-text p-3 mt-5">
 					<p>I'm John Alfred Manalang, a 24 year old artist and toy enthusiast currently residing in San Juan City, Metro Manila. I love adventures, food crawls and discovering new interests. Because of my passion for computers, digital outputs and anything tech-related, I am aiming to be a full-time web developer or software engineer for well-known companies. I am <strong>knowledgeable in HTML, CSS and Bootstrap.</strong></p>
 				</div>
-				<div class="mt-3 p-1 d-flex flex-column">
+				<div class="mt-4 p-3 flex-column">
 					<div class="d-flex d-flex-column justify-content-center">
 					<img src="https://www.drupal.org/files/project-images/bootstrap-stack.png" class="rounded-circle bg-white img-fluid mdt-md-0" width="150">
 					</div>
@@ -51,37 +63,39 @@
 				</div>
 			</div>
 		<!-- End of Short Introduction -->
+		</div>
+	<!-- End of About Me Section -->
 
 
 		<!-- Professional Experiences -->
-		<h3 class="mt-2 font-weight-bold text-center p-5" id="experiences">Professional Experiences</h3>
-			<div class="d-md-flex justify-content-around mt-1 bg-dark p-3 min-vh-10 text-light border rounded w-600">
+		<h3 class="mt-2 font-weight-bold text-center p-1" id="profexperience">Professional Experiences</h3>
+			<div class="row text-center mt-1 bg-white p-2 min-vh-100 text-dark">
 				<!-- Architectural Planning Card Start -->
-				<div class="p-2 d-flex-column">
-					<img src="images/hands.jpg" width="370" class="rounded w-600">
+				<div class="p-1">
+					<img src="images/hands.jpg" width="350" class="rounded w-600">
 					<h5 class="font-weight-bold mt-3">Architectural Design</h5>
 					<h6 class="font-weight-bold mt-2 text-muted mb-3">Conceptualizing User-Oriented approaches</h6>
-					<p>Being an architecture student is a pretty tough role. Preparing design frameworks from its early conception to producing rendered models of residential houses, hospitals and stadiums were all part of our journey. Being creative definitely helped in shaping my perspective on tackling social issues that are linked to architecture (e.g. housing for the poor, accesibility in design, community and road development). The experience was definitely a factor for my future engagements as it helped me both as an individual and a professional.</p>
+					<p class="p-2">Being an architecture student is a pretty tough role. Preparing design frameworks from its early conception to producing rendered models of residential houses, hospitals and stadiums were all part of our journey. Being creative definitely helped in shaping my perspective on tackling social issues that are linked to architecture (e.g. housing for the poor, accesibility in design, community and road development). The experience was definitely a factor for my future engagements as it helped me both as an individual and a professional.</p>
 					<!--   -->
 				</div>
 				<!-- Architectural Planning Card End -->
 
 				<!-- Site Inspection Card Start -->
-				<div class="p-2 bg-secondary border border-secondary rounded w-600">
+				<div class="p-1">
 					<img src="images/site-inspection.jpg" width="350" class="rounded w-600">
 					<h5 class="font-weight-bold mt-3">Site Inspection</h5>
 					<h6 class="font-weight-bold mt-2 text-dark mb-3">Embodying professionalism in the workplace</h6>
-					<p>As part of our college curriculum for the Architecture program, I was exposed to the everyday job of on-site construction works. Commissary plantations and factories covered the majority of my visits. Handling tools and correcting planning errors on print are not as easy as one would think. This allowed me to give great appreciation to the skilled workers that construct our everyday settlements. Overall, engaging with other workers in a professional setup is the main takeaway from the experience.</p>
+					<p class="p-2">As part of our college curriculum for the Architecture program, I was exposed to the everyday job of on-site construction works. Commissary plantations and factories covered the majority of my visits. Handling tools and correcting planning errors on print are not as easy as one would think. This allowed me to give great appreciation to the skilled workers that construct our everyday settlements. Overall, engaging with other workers in a professional setup is the main takeaway from the experience.</p>
 					<!--   -->
 				</div>
 				<!-- Site Inspection Card End -->
 
 				<!-- Aviation Industry Card Start -->
-				<div class="p-2">
-					<img src="images/plane.jpg" width="300" class="rounded w-600">
+				<div class="p-1">
+					<img src="images/plane.jpg" width="350" class="rounded w-600">
 					<h5 class="font-weight-bold mt-3">Aviation Industry</h5>
 					<h6 class="font-weight-bold mt-2 text-muted mb-3">Being a student pilot in an ever-changing environment</h6>
-					<p>I had the opportunity to become a scholar of Cebu Pacific's Cadet Pilot Program. Under this program, we were trained in Adelaide, South Australia to become airline pilots operating their local and international fleets. I was exposed to the intricacies of being pilot-in-command of a four-seater plane from take-off to landing. While not in the air, we study ground school subjects that covered aviation theories. It was an amazing experience that can top no other.</p>
+					<p class="p-2">I had the opportunity to become a scholar of Cebu Pacific's Cadet Pilot Program. Under this program, we were trained in Adelaide, South Australia to become airline pilots operating their local and international fleets. I was exposed to the intricacies of being pilot-in-command of a four-seater plane from take-off to landing. While not in the air, we study ground school subjects that covered aviation theories. It was an amazing experience that can top no other.</p>
 					<!-- -->
 
 				</div>
@@ -92,13 +106,13 @@
 
 
 		<!-- Hobbies and Interests -->
-			<div id="hobbies" class="p-5">
+			<div id="hobbies" class="container-fluid p-1">
 				<h3 class="mt-2 font-weight-bold">Hobbies and Interests</h3>
 				<!-- Formula One Interest Start -->
 					<div class="row mt-3 mb-4 p-4">
 						<div class="col-12 col-md-6 order-2 order-md-1">
 							<h5 class="pt-3 font-weight-bold">Formula One</h5>
-							<p class="p-2">Starting from Michael Schumacher's dominant years in the 2000s, my father and I developed an interest in Formula One. The thrill that every race brings - on top of driver rivalries, always excites me. I have always been a <em>Tifoso</em>, or more commonly known as a Ferrari fan, but has over the years supported other strong teams in the current hybrid era such as Red Bull Racing and Mclaren. I also collect team merchandise and race car scale models.</p>
+							<p class="p-1">Starting from Michael Schumacher's dominant years in the 2000s, my father and I developed an interest in Formula One. The thrill that every race brings - on top of driver rivalries, always excites me. I have always been a <em>Tifoso</em>, or more commonly known as a Ferrari fan, but has over the years supported other strong teams in the current hybrid era such as Red Bull Racing and Mclaren. I also collect team merchandise and race car scale models.</p>
 							
 						</div>
 						<div class="col-12 col-md-6 order-1 order-md-2">
@@ -111,7 +125,7 @@
 					<div class="row mt-3 mb-4 p-4">
 						<div class="col-12 col-md-6 order-2 order-md-2">
 							<h5 class="pt-3 font-weight-bold">Star Wars</h5>
-							<p class="p-2">Nothing can ever separate me from anything Star Wars related. This timeless franchise has always been close to my heart ever since I was a young boy. The world building, score and themes of each unique trilogy hits me with emotions and nostalgia. Even when I grow old, my love for Star Wars will only grow. I also collect, create and appreciate Star Wars merchandise. My most prized possession is a japanese resin cast of the character Boba Fett and a Stormtrooper from the original trilogy. </p>
+							<p class="p-1">Nothing can ever separate me from anything Star Wars related. This timeless franchise has always been close to my heart ever since I was a young boy. The world building, score and themes of each unique trilogy hits me with emotions and nostalgia. Even when I grow old, my love for Star Wars will only grow. I also collect, create and appreciate Star Wars merchandise. My most prized possession is a japanese resin cast of the character Boba Fett and a Stormtrooper from the original trilogy. </p>
 
 						</div>
 						<div class="col-12 col-md-6 order-1 order-md-1">
@@ -124,7 +138,7 @@
 					<div class="row mt-3 mb-4 p-4">
 						<div class="col-12 col-md-6 order-2 order-md-1">
 							<h5 class="pt-3 font-weight-bold">Prehistoric Life</h5>
-							<p class="p-2">To say that only dinosaurs are the prehistoric creatures I love would be wrong. Although I do get geeky with dinosaurs, I love all the extinct fauna of our earth's geologic past. I love reading about prehistoric life and their interactions within their ecological niches. From the early archosaurs of the Triassic to the furry mammals (our ancestors) of the Cenozoic, I can definitely say that my knowledge about these majestic creatures that roamed our earth is ever-expanding.</p>
+							<p class="p-1">To say that only dinosaurs are the prehistoric creatures I love would be wrong. Although I do get geeky with dinosaurs, I love all the extinct fauna of our earth's geologic past. I love reading about prehistoric life and their interactions within their ecological niches. From the early archosaurs of the Triassic to the furry mammals (our ancestors) of the Cenozoic, I can definitely say that my knowledge about these majestic creatures that roamed our earth is ever-expanding.</p>
 							<!--  -->
 						</div>
 						<div class="col-12 col-md-6 order-1 order-md-2">
